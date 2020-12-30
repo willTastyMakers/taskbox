@@ -6,11 +6,11 @@ export default {
   component: MyPage,
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {argTypes}) => ({
   props: Object.keys(argTypes),
-  components: { MyPage },
+  components: {MyPage},
   template:
-    '<my-page :user="user" @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />',
+      '<my-page :user="user" @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />',
 });
 
 export const LoggedIn = Template.bind({});

@@ -4,14 +4,14 @@ export default {
   title: 'Example/Button',
   component: MyButton,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
+    backgroundColor: {control: 'color'},
+    size: {control: {type: 'select', options: ['small', 'medium', 'large']}},
   },
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {argTypes}) => ({
   props: Object.keys(argTypes),
-  components: { MyButton },
+  components: {MyButton},
   template: '<my-button @onClick="onClick" v-bind="$props" />',
 });
 

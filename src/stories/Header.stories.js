@@ -5,11 +5,11 @@ export default {
   component: MyHeader,
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {argTypes}) => ({
   props: Object.keys(argTypes),
-  components: { MyHeader },
+  components: {MyHeader},
   template:
-    '<my-header :user="user" @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />',
+      '<my-header :user="user" @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />',
 });
 
 export const LoggedIn = Template.bind({});
