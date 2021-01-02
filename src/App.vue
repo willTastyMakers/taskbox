@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <InboxScreen />
   </div>
 </template>
 
 <script>
 import store from "./store";
-import TaskList from "./components/TaskList.vue";
-
+import InboxScreen from "./components/InboxScreen.vue";
 export default {
   name: "app",
   store,
   components: {
-    TaskList
+    InboxScreen
   }
 };
 </script>
