@@ -20,5 +20,5 @@ jobs:
           # our project token, to see how to obtain it
           # refer to https://www.learnstorybook.com/intro-to-storybook/vue/en/deploy/
           projectToken: project-token
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
