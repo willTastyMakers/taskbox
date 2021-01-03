@@ -10,6 +10,7 @@
         placeholder="Input title"
         readonly
         type="text"
+        style="text-overflow: ellipsis;"
       />
     </div>
 
